@@ -36,8 +36,40 @@ public class ForWhile {
 				System.out.println();
 			}
 		}else {
-			
+			for(int j=0; j<Math.abs(num);j++) {				
+				for(int i =Math.abs(num); i>j; i--) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
 		}
 	}
+	
+	public void countInputCharacter(){
+		System.out.print("문자열 입력 : ");
+		String str = sc.next();
+		
+		for(int i = 0; i < str.length(); i++){
+	        if(!Character.isLetter(str.charAt(i))){
+	            System.out.println("영문자가 아닙니다.");
+	            return;
+	        }
+	    }
+		
+		System.out.print("문자 입력 : ");
+		char inStr = sc.next().charAt(0);
+		int inNum = 0;
+		
+		
+		
+		for(int i =0; i<str.length();i++) {
+			if(str.charAt(i) == inStr) {
+				inNum ++;
+			}
+		}
+		System.out.println("포함된 갯수 : " + inNum);
+		
+	}
+
 
 }

@@ -8,6 +8,7 @@ public class Main {
 		ForWhile fw01 = new ForWhile();
 //		fw01.printStar1();
 		fw01.printStar2();
+//		fw01.countInputCharacter();
 	}
 
 }
