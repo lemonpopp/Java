@@ -17,7 +17,11 @@ public class Test {
 		}
 	}
 	public void test03(char ch) {
-		
+		if(Character.isUpperCase(ch)) {
+			System.out.println("대문자입니다.");
+		}else {
+			System.out.println("소문자입니다.");
+		}
 	}
 	
 }
