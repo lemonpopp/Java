@@ -59,9 +59,7 @@ public class ForWhile {
 		System.out.print("문자 입력 : ");
 		char inStr = sc.next().charAt(0);
 		int inNum = 0;
-		
-		
-		
+				
 		for(int i =0; i<str.length();i++) {
 			if(str.charAt(i) == inStr) {
 				inNum ++;
