@@ -1,4 +1,4 @@
-package silsub2.model.vo;
+package com.silsub2.model.vo;
 
 public class Product {
 	private String pName;

@@ -1,6 +1,6 @@
-package silsub2.run;
+package com.silsub2.run;
 
-import silsub2.model.vo.Product;
+import com.silsub2.model.vo.Product;
 
 public class Run {
 
