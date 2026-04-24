@@ -12,6 +12,7 @@ public class SmartPhone extends Desktop{
 			String cpu, int ssd, int ram, String os, boolean allInOne, String mobileAgency) {
 		super(brand, productNumber, productCode, productName, price, date, cpu, ssd, ram, os, allInOne);
 		this.mobileAgency = mobileAgency;
+		System.out.println("desktop을 상속받은 smartphone 클래스의 생성자 호출...");
 	}
 
 	public String getMobileAgency() {

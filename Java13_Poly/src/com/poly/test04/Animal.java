@@ -1,0 +1,10 @@
+package com.poly.test04;
+
+public abstract class Animal {
+	public abstract void bark();
+	
+	public void eat(String food) {
+		System.out.println(food + " 얌얌!");
+	}
+	
+}
