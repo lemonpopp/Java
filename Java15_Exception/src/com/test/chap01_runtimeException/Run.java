@@ -5,8 +5,9 @@ public class Run {
 		RunExceptiomPrac rep = new RunExceptiomPrac();
 		
 		//ArithmeticException
-		rep.aruthEx();
-
+		//rep.aruthEx();
+		rep.classNArrayEx();
+		
 	}
 
 }
