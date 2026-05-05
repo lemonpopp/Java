@@ -8,8 +8,7 @@ public class Book {
 	
 	public Book() {}
 	
-	public Book(int bNo, int category, String title, String author) {
-		this.bNo = bNo;
+	public Book(int category, String title, String author) {
 		this.category = category;
 		this.title = title;
 		this.author = author;
@@ -47,10 +46,29 @@ public class Book {
 		this.author = author;
 	}
 
-	@Override
-	public String toString() {
-		return "Book [bNo=" + bNo + ", category=" + category + ", title=" + title + ", author=" + author + "]";
-	}
+	 @Override
+	 public String toString() {
+		 String categoryName = "";
+
+		 switch(category) {
+	        case 1:
+	            categoryName = "인문";
+	            break;
+	        case 2:
+	            categoryName = "자연과학";
+	            break;
+	        case 3:
+	            categoryName = "의료";
+	            break;
+	        case 4:
+	            categoryName = "기타";
+	            break;
+	        default:
+	            categoryName = "잘못된 분류";
+	      }
+
+	      return bNo + "번 / " + categoryName + " / " + title + " / " + author;
+	 }
 	
 	
 }
