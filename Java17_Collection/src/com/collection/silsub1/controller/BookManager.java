@@ -42,13 +42,13 @@ public class BookManager {
     public Book[] sortedBookList() {
         ArrayList<Book> list = bd.sortedBookList();
 
-        Book[] br = new Book[list.size()];
+        Book[] bk = new Book[list.size()];
 
         for(int i = 0; i < list.size(); i++) {
-            br[i] = list.get(i);
+            bk[i] = list.get(i);
         }
 
-        return br;
+        return bk;
     }
 
     public void printBookList(Book[] br) {

@@ -18,6 +18,7 @@ public class BookDao {
 	}
 	
 	public int getLastBookNo() {
+		//배열,리스트 -> 크기 - 1 == 마지막 인덱스
 		return bookList.get(bookList.size() - 1).getBNo();
 	}
 	
@@ -46,6 +47,7 @@ public class BookDao {
 	        return -1;
 	}
 	
+	//해당 인덱스에 Book 객체 리턴
 	public Book selectBook(int index) {
 		return bookList.get(index);
 		
@@ -57,10 +59,10 @@ public class BookDao {
 	}
 	
 	public ArrayList<Book> sortedBookList() {
-        ArrayList<Book> sortList = new ArrayList<Book>(bookList);
+        ArrayList<Book> list = new ArrayList<>(bookList);
 
-        Collections.sort(sortList, new AscCategory());
+        list.sort(new AscCategory());
 
-        return sortList;
+        return list;
     }
 }
